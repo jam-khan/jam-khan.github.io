@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	// By default, all the divs are hidden, if you were to add a new div, you should hide it here.
 	// If you want to show a div, you should clic on the corresponding link on the navbar.
-	$('#educationContent').hide();
+	// $('#educationContent').hide();
 	$('#publicationsContent').hide();
 	$('#experienceContent').hide();
 	$('#conferencesContent').hide();
@@ -11,10 +11,7 @@ $(document).ready(function(){
 	$('#particularContent').hide();
 	// $('#photosContent').hide();
 
-	// Options menu is hidden by default
-	$('#theme').hide();
-	$('#lan').hide();
-
+	
 	// Handle 'About Me' content
 	$('#aboutme').click(function(e) {
 
@@ -218,8 +215,8 @@ $(document).ready(function(){
 	// If the user has not selected a theme, then select the default one according to the user's preferences
 	if(localStorage.getItem("theme") === null){
 		localStorage.theme = "light";
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
-			localStorage.theme = "dark";
+		// if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+		// 	localStorage.theme = "dark";
 	}
 
 	// Always load the light theme
