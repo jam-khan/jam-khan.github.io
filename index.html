@@ -2,8 +2,6 @@
 <html lang="en">
 
 	<head>
-
-		<!-- Meta tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,23 +12,16 @@
 		<meta name="author" content="Jam Kabeer Ali Khan" />
 		<meta name="copyright" content="Work protected by copyright; no distribution without permission." />
 		
-		<!-- Title + Icon -->
-		<title>Jam Kabeer Ali Khan</title>
-		<!-- <link rel="icon" type="image/x-icon" href="assets/documents/imgs/JamKhan.jpg"> -->
-
-		<!-- Improve SEO -->
+		<title>Jam K. A. Khan</title>
 		<meta name="robots" content="index,follow" />
 
-		<!-- Styles -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 		<link rel="stylesheet" href="assets/css/main.css">
-
 	</head>
 
-	<!-- Google tag (gtag.js) & Google Analytics -->
 	<script>
         fetch('./assets/js/config.json')
             .then(response => response.json())
@@ -50,102 +41,22 @@
     </script>
 
 	<body>
-
-		<!-- Bottom rounded button -->
-		<!-- <div class="options-button" id="options-toggler"><i class="fa-light fa-arrows-repeat"></i></div> -->
-		<div class="options-button" id="theme"><i class="fa-duotone fa-lightbulb"></i></div>
-		<!-- <div class="options-button" id="theme"><i class="fa fa-duotone fa-moon-o"></i></div> -->
-		
-
-		<!-- Navbar  -->
-		<nav id="top-nav" class="navbar navbar-expand-md navbar-light bg-light flex-md-nowrap flex-wrap">
-			<div class="container justify-content-center">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="collapsingNavbar3">
-					<ul class="navbar-nav mx-auto language" id="navbarList">
-						<li class="nav-item">
-							<a class="nav-link active" id="aboutme" href="#" 
-								data-en="About Me">
-							</a>
-						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" id="education" href="#" 
-								data-en="Education">
-						</a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link" id="blog" href="#" 
-								data-en="Blog">
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="academic" href="#" 
-								data-en="Academic">
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="projects" href="#" 
-								data-en="Side Projects">
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="conferences" href="#" 
-								data-en="Conferences">
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="experience" href="#" 
-								data-en="Experience">
-							</a>
-						</li> -->
-						<!-- Example using Photos -->
-						<!-- <li class="nav-item">
-							<a class="nav-link" id="photos" href="#" 
-								data-es="Fotos" 
-								data-en="Photos">
-							</a>
-						</li> -->
-					</ul>
-				</div>
-			</div>
-		</nav>
-
 		<div class="container" id="main-content">
 			<div class="row content" id="section-content">
 				
-				<!-- Jam Kabeer Ali Khan profile and contact info -->
 				<div id="leftPanel" class="col-md-3 language">
 					<div class="row mb-3">
 						<div class="col">
-							<img src="assets/documents/imgs/JamKhan.jpg" class="rounded me-auto d-block img-fluid profilepicture" alt="Jam Kabeer Ali Khan's profile picture">
+							<img 
+								src="assets/documents/imgs/JamKhan.jpg"
+								class="rounded me-auto d-block img-fluid profilepicture"
+								style="max-width: 450px; max-height: 330px"
+								alt="Jam Kabeer Ali Khan's profile picture">
 						</div>
 					</div>
 
-					<h3 class="mb-2">Jam Kabeer Ali Khan</h3>
-
-					<p class="mb-4">
-						<span class="t-secondary" 
-						data-en="CS and Math @ University of Hong Kong"></span>
-						<br>
-						<span class="t-secondary" 
-						data-en="Spring '24 @ Northeastern University, Boston"></span>
-					</p>
+					<h5 class="mb-1">Jam Kabeer Ali Khan</h5>
 					
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fal fa-map-marker-alt" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<span 
-								data-en="Bochum, Germany">
-							</span>
-						</div>
-					</div>
-
 					<div class="row mb-2">
 						<div class="col-1">
 							<i class="ai ai-cv" aria-hidden="true"></i>
@@ -188,363 +99,264 @@
 				</div>
 
 				<!-- About Me -->
-				<div class="col-md-8 offset-md-1 mb-5 active" id="aboutmeContent">
+				<div class="col-md-8 offset-md-1 mb-5 active" id="mainPage">
 					<div class="container">
 						<div class="row language">
+							<!-- <em>fibs = 0 : 1 : zipWith (+) fibs (tail fibs)</em> -->
+							<h3 id="honors-and-awards" class="mt-2" data-en="About me"></h3>
 							<p class="mt-2 justify">
-								I am a recent graduate from the University of Hong Kong, where I majored in Computer Science with minor in Mathematics and currently, I am doing a research internship on Quantum Programming Languages at <a href="https://www.mpi-sp.org/">Max Planck Institute for Security and Privacy</a> under Prof. <a href="https://gbarthe.github.io/">Gilles Barthe</a>.
-								Later, I will be joining Standard Chartered Bank as a quantitative developer using Haskell (Mu - Strict variant of Haskell) in their <a href="https://www.sc.com/en/global-careers/experienced-hire/spotlight-career-opportunities/modelling-and-analytics/">MAG</a> Team.
-								Before that, I did my bachelor's thesis on Capabilities as First-Class modules and Separate Compilation using first-class environments under the supervision of Prof. <a href="https://www.cs.hku.hk/people/academic-staff/bruno">Bruno C. d. S. Oliveira</a> at the <a href="https://hkuplg.github.io/">HKU PL Group.</a>
-								Previously, I worked as a research intern at the <a href="https://qici.weebly.com/">QICI</a> (Quantum Information and Computation Initiative) lab under Prof. <a href="https://www.cs.hku.hk/index.php/people/academic-staff/ravi">Ravi Ramanathan</a>,
-								where I researched the Device-Independent Quantum Key Distribution. I am interested in Programming Languages, Formal Verification, and Quantum Computing.
+								Hey! I am Jam Khan. Currently, I am working as a Haskell Quantitative Developer in <a href="https://dl.acm.org/doi/10.1145/3674633">Core Strats</a> at Standard Chartered. 
+								<br>
+								<br>
+								Previously, I worked as a research intern at the Max Planck Institute for Security and Privacy, supervised by <a href="https://gbarthe.github.io/">Gilles Barthe</a>, and
+								collaborated with <a href="https://michaelwalter.info/">Michael Walter</a> and <a href="https://anurudhp.github.io/">Anurudh Peduri</a>;
+								did Bachelor's thesis supervised by <a href="https://www.cs.hku.hk/people/academic-staff/bruno">Bruno C. d. S. Oliveira</a> at the <a href="https://hkuplg.github.io/">HKU PL Group</a>;
+								a research intern at the Quantum Information and Computation Lab (<a href="https://qici.weebly.com/">QICI</a>), supervised by <a href="https://www.cs.hku.hk/index.php/people/academic-staff/ravi">Ravishankar Ramanathan</a>.
+								I'm broadly interested in functional programming, type systems, formal methods and quantum computing.
 							</p>
+
+							<!-- Education Section -->
+							<h3 class="section-heading">Education</h3>
+							<ul class="mt-1 no-bullets">
+
+								<li class="list-item">
+									<div class="item-header">
+										<div class="item-main">
+											<h4 class="item-title">Bachelors of Engineering</h4>
+											<div class="item-subtitle">Major in Computer Science with Minor in Mathematics</div>
+											<div class="item-subtitle"><strong>University of Hong Kong</strong></div>
+										</div>
+										<span class="item-time">2021 – 2025</span>
+									</div>
+								</li>
 							
-							<h3 id="honors-and-awards" class="mt-2" data-en="Honors and Awards"></h3>
-
-							<ul class="mt-1">
-
-								<li class="abme-honors-bullet">
-									<strong>HKUWW Exchange Scholarship </strong>, <span  data-en="for semester exchange at Northeastern University, Boston."></span> 
+								<li class="list-item">
+									<div class="item-header">
+										<div class="item-main">
+											<h4 class="item-title">BSc (Semester Exchange)</h4>
+											<div class="item-subtitle">Computer Science and Math</div>
+											<div class="item-subtitle"><strong>Northeastern University, Boston</strong></div>
+										</div>
+										<span class="item-time">Spring@2024</span>
+									</div>
 								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong>Full-Tuition HKU Scholarship</strong>, <span data-en="awarded total of 90,000 USD for Undergraduate."></span>
+							</ul>
+							
+							<h3 id="honors-and-awards" class="mt-2" data-en="Research Papers"></h3>
+							<ul class="mt-1 no-bullets">
+								<li class="publication">
+									<p class="publication-title">Traq: Estimating the Quantum Cost of Classical Programs</p>
+									<p class="publication-authors">
+									Anurudh Peduri, <strong>Jam Kabeer Ali Khan</strong>, Gilles Barthe, and Michael Walter
+									</p>
+									<p class="publication-link">
+									<a href="#" target="_blank">[Under submission]</a>
+									</p>
 								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong>Cathay Hackathon '23</strong>, won a Free Return ticket to Boston.
+								
+								<li class="publication">
+									<p class="publication-title">A Duality Theorem for Classical-Quantum States with Applications to Complete Relational Program Logics</p>
+									<p class="publication-authors">
+									Gilles Barthe, Minbo Gao, <strong>Jam Kabeer Ali Khan</strong>, Matthijs Muis, Ivan Renison, Keiya Sakabe, Michael Walter, Yingte Xu, and Li Zhou
+									</p>
+									<p class="publication-link">
+									<a href="https://arxiv.org/abs/2510.07051" target="_blank">[arXiv:2510.07051]</a>
+									</p>
 								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong><span data-en="Regional Distinction in GCE A-levels"></span></strong> <span data-en="for Physics, CS and best across 3 GCE A-levels"></span>
+								
+								<li class="publication">
+									<p class="publication-title">Capabilities as First-Class Modules with Separate Compilation</p>
+									<p class="publication-authors">
+									<strong>Jam Kabeer Ali Khan</strong>
+									</p>
+									<p class="publication-link">
+									<a href="https://pldi25.sigplan.org/details/pldi-2025-src/2/Capabilities-as-First-Class-Modules-with-Separate-Compilation" target="_blank">PLDI'25 Student Research Competition</a>
+									</p>
+									<p class="publication-award">
+										🥇 Gold Medal, Undergraduate Category
+									</p>								  
+									<div class="publication-materials">
+									<a href="assets/documents/publications/pldi25src_khan.pdf" target="_blank">Paper</a>
+									<a href="https://www.youtube.com/live/BRhBv_aYNks?t=5125s" target="_blank">Talk</a>
+									<a href="assets/documents/PLDI_SRC_Poster.pdf" target="_blank">Poster</a>
+									</div>
 								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong> Full Tuition Scholarship</strong>, <span data-en="for GCE A-levels"></span> @ Nixor College Karachi
-								</li>
-
 							</ul>
 
-							<!-- <h4 id="hobbiesH4" class="mt-2">Hobbies</h4>
-
-							<div class="container">
-								<div class="row mt-3">
-									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerProgramming.webp" alt="Programming and Math">
-									</div>
-									<div class="col-md-9" id="hobbie1">
-										<b 
-											data-es="Programación + Mates" 
-											data-en="Programming + Math">
-										</b>
-
-										<br />
-										<p class="mt-2 d-inline justify"
-											data-es="Desde pequeño sentí curiosidad por saber cómo se creaban los escenarios (visualmente) de los diferentes videojuegos; cómo los motores gráficos conseguían lo que yo consideraba en aquella época unos 'gráficos increíbles'. Motivado por esto y por mi pasión por la programación, he incluido los ejercicios de"
-											data-en="Since I was a child I was curious to know how the scenarios were created (visually) in different videogames; how the graphics engines managed to achieve, what I considered at that time to be, 'unbelievable graphics'. Motivated by this and by my passion for programming, I've included the exercises in">
-										</p>
-
-										<a href="https://projecteuler.net/" class="link-dark" target="_blank">Project Euler</a> <span data-es="en mi" data-en="into my"></span> <a href="https://github.com/NicolasMeseguer/Toolbox" class="link-dark" target="_blank"><span data-es="propio repositorio de código abierto" data-en="own open-source repository"></span></a>.
-
-									</div>
+							<!-- <section class="experience-section"> -->
+							<h3 class="section-heading">Experience</h3>
+							
+							<ul class="experience-list no-bullets">
+								<li class="experience-item">
+								<div class="experience-header">
+									<h4 class="experience-title"><strong>Haskell Quantitative Developer</strong> @ Standard Chartered</h4>
+									<span class="experience-time">Oct 2025 - present</span>
 								</div>
-
-								<div class="row mt-5">
-									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerTailandia.webp" alt="Travelling">
-									</div>
-									<div class="col-md-9" id="hobbie2">
-										<b 
-											data-es="Viajar" 
-											data-en="Travelling">
-										</b>
-
-										<br />
-										<p class="mt-2 d-inline justify"
-											data-es="Decidí viajar a Alemania para hacer unas prácticas el mismo año que terminé el grado superior. Desde entonces, me he propuesto ir a un lugar nuevo al menos una vez al año. He recorrido Italia, conducido en moto a través de Tailandia (sin embargo, la pandemia me lo ha puesto bastante dificil estos últimos años)."
-											data-en="I opted to move to Germany for an internship the same year I finished my undergraduate degree (HNC). Since then, I've made it a goal to go to a new location at least once a year. I've been across Italy and Thailand since then (although the pandemic has hampered my progress quite a bit this last years).">
-										</p>
-
-									</div>
-								</div>
+								</li>
 								
-								<div class="row mt-5">
-									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerYouTube.webp" alt="Content Creator on YouTube">
+								<li class="experience-item">
+								<div class="experience-header">
+									<h4 class="experience-title"><strong>Research Intern</strong> @ Max Planck Institute for Security and Privacy</h4>
+									<span class="experience-time">April – Sept 2025</span>
+								</div>
+								</li>
+							
+								<li class="experience-item no-bullet">
+								<div class="experience-header">
+									<h3 class="experience-title"><strong>Undergrad Research</strong> @ Programming Languages Group, HKU</h3>
+									<span class="experience-time">Aug 2024 – April 2025</span>
+								</div>
+								</li>
+								<li class="experience-item no-bullet">
+								<div class="experience-header">
+									<h3 class="experience-title"><strong>Research Intern</strong> @ Quantum Information and Computation Lab, HKU</h3>
+									<span class="experience-time">June – Aug 2024</span>
+								</div>
+								</li>
+
+								<li class="experience-item no-bullet">
+									<div class="experience-header">
+										<h3 class="experience-title">Technology Intern @ ActusRayPartners Hedge Fund</h3>
+										<span class="experience-time">June – Aug 2023</span>
 									</div>
-									<div class="col-md-9" id="hobbie3">
-										<b 
-											data-es="Filmaker (casi nunca)" 
-											data-en="Video Creator (rarely)">
-										</b>
+								</li>
 
-										<br />
-										<p class="mt-2 d-inline justify"
-											data-es="Me gusta compartir mis experiencias en el campo de la tecnología. Llevo viendo vídeos en internet desde que tengo uso de razón, así que en 2018 decidí crearme un canal de"
-											data-en="I enjoy sharing my experiences, particularly in the field of technology. I've been watching videos on the internet for as long as I can remember, so in 2018 I decided to start a">
-										</p>
-
-										<a href="https://www.youtube.com/c/NicolasMeseguer" class="link-dark" target="_blank">YouTube</a><span data-es="." data-en=""></span>
-
-										<span
-											data-es="Algunos vídeos tienen más de 150 mil visitas a día de hoy... ¿No es increíble? Si tienes suerte puedes encontrarme por"
-											data-en="channel. Some videos have already received over 150 thousand views as of today... Isn't it amazing? If lucky enough you can find me at">
-										</span>
-
-										<a href="https://www.twitch.tv/nicolasmeseguerr" class="link-dark" target="_blank">Twitch</a>
-										
-										<br>
-
-										<span class="lucida-console small">(<i class="fa-light fa-share-from-square"></i> <a href="https://www.youtube.com/@NicolasMeseguerArchive" class="link-dark" target="_blank">YouTube Archive)</a>.</span>
-
+								<li class="experience-item no-bullet">
+									<div class="experience-header">
+										<h3 class="experience-title">Programmer (Freelance) @ All Round Education Academy</h3>
+										<span class="experience-time">March – Dec 2023</span>
 									</div>
+								</li>
+									
+								<li class="experience-item">
+								<div class="experience-header">
+									<h3 class="experience-title">Student Research Assistant (Programmer) @ Sleep Lab, HKU</h3>
+									<span class="experience-time">April 2022 – Oct 2022</span>
 								</div>
-							</div> -->
+								</li>
+							</ul>
+
+							<h3 class="section-heading">Teaching Experience</h3>
+							
+							<ul class="experience-list no-bullets">
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"><strong>Student TA</strong> - COMP236 Object-Oriented Programming in Java @ HKU</h4>
+										<span class="experience-time">Sept - Dec 2024</span>
+									</div>
+								</li>
+
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"><strong>Student TA</strong> - COMP236 Object-Oriented Programming in Java @ HKU</h4>
+										<span class="experience-time">Sept - Dec 2023</span>
+									</div>
+								</li>
+
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"><strong>Student TA</strong> - ENGG1340 Computer Programming II in C++ @ HKU</h4>
+										<span class="experience-time">Jan - May 2023</span>
+									</div>
+								</li>
+
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"><strong>IB & GCE A-level Tutor</strong> - CS & Math @ All Round Education Academy</h4>
+										<span class="experience-time">Jan - May 2023</span>
+									</div>
+								</li>
+							</ul>
+
+							<h3 class="section-heading">Conferences</h3>
+							
+							<ul class="experience-list no-bullets">
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"><strong>Volunteer</strong> @ CAV'25</h4>
+										<span class="experience-time">July 2025</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"><strong>Presenter & Attendee</strong> @ PLDI'25</h4>
+										<span class="experience-time">June 2025</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"><strong>Virtual Attendee</strong> @ POPL'25</h4>
+										<span class="experience-time">Jan 2025</span>
+									</div>
+								</li>
+							</ul>
+
+							<h3 class="section-heading">Honors and Awards</h3>
+							
+							<ul class="experience-list">
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">PLDI'25 SRC Gold Award (~500 USD)</h4>
+										<span class="experience-time">Jun 2025</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">HKSAR Goverment Scholarship (~44000 USD)</h4>
+										<span class="experience-time">2021, 22, 23, 24</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">HKU Undergraduate Entrance Scholarship for Outstanding Academic Talents (~33000 USD)</h4>
+										<span class="experience-time">2022, 23, 24</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">Rosita King Ho Scholarship (~1540 USD) -- Exchange to Boston</h4>
+										<span class="experience-time">2024</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">1st runner up @Cathay Hackathon'23 (~Free return ticket from HK to Boston)</h4>
+										<span class="experience-time">2023</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">HKU Foundation Entrance Scholarship (~11000 USD)</h4>
+										<span class="experience-time">2021</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">Top in Sindh & Balochistan for GCE A-level Computer Science & Physics</h4>
+										<span class="experience-time">2020</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title"> in Sindh & Balochistan for GCE A-level Computer Science & Physics</h4>
+										<span class="experience-time">2020</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">Best across 3 GCE A-levels, 2nd place in Pakistan</h4>
+										<span class="experience-time">2020</span>
+									</div>
+								</li>
+								<li class="experience-item">
+									<div class="experience-header">
+										<h4 class="experience-title">100% Merit Scholarship for GCE A-levels @Nixor College Karachi (~5000+ USD)</h4>
+										<span class="experience-time">2018-20</span>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<!-- Education -->
-					<div id="educationContent">
-						<h3 class="mx-2">Education</h3>
-						<div class="container">
-							<div class="row mt-2 language">
-								<h5
-									data-en="BEng in Computer Science and Mathematics"></h5>
-								<div class="trnsf-thin" 
-									data-en="University of Hong Kong, 2021-2025"></div>
-	
-								<!-- <p class="mt-1 justify"
-									data-en="I hate this university">
-								</p> -->
-	
-								<div class="trnsf-thin">
-									<span 
-										data-en="Bachelor's Thesis: Capabilities as First-Class Modules">
-									</span>
-									<span class="trnsf-italic"
-										data-en="(In Progress)">
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="container">
-							<div class="row mt-2 language">
-								<h5
-									data-en="BSc Computer Science and Mathematics"></h5>
-								<div class="trnsf-thin" 
-									data-en="Northeastern University Boston, Spring '24 Exchange"></div>
-
-							</div>
-						</div>
-
-						<div class="container">
-							<div class="row mt-2 language">
-								<h5
-									data-en="Cambridge International GCE A-levels"></h5>
-								<div class="trnsf-thin" 
-									data-en="Nixor College, Karachi"></div>
-	
-								<p class="mt-1 justify"
-									data-en="">
-								</p>
-							</div>
-						</div>
-					</div>
-
-
-					
-				</div>
-
-
-				
-
-
-				<!-- Publications -->
-				<div class="col-md-8 offset-md-1 mb-5" id="publicationsContent">
-					<div class="container">
-
-						<!-- Each new year -->
-						<div class="row mt-3">
-							<h2 class="pub-year-h2">2023</h2>
-
-							<!-- Each new publication inside the given year -->
-							<div class="pub-block">
-								<!-- Title -->
-								<div class="lucida-console h5">CPU-PCGCN: Efficient Processing of Convolutional Graph Networks on CPU Architectures</div>
-								<!-- Authors -->
-								<div class="pub-authors mt-1"><span class="pub-author">Nicolás Meseguer-Iborra</span>, José L. Abellán, Manuel E. Acacio</div>
-								<!-- Place -->
-								<div class="pub-congress">19th International Summer School on Advanced Computer Architecture and Compilation for High-performance Embedded Systems, Fiuggi (Italy), July 2023.</div>
-								<!-- Links -->
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="/assets/documents/publications/2023CPU-PCGCN-Poster.pdf" target="_blank" class="link-dark ">Poster</a> </span>
-									<span class="pub-force-margin-left"> <i class="far fa-file-pdf"></i> <a href="/assets/documents/publications/2023CPU-PCGCN-Abstract.pdf" target="_blank" class="link-dark ">Abstract</a> </span>
-									<!-- This <a> with id citation, will automatically copy to the clipboard the bibtex citation -->
-									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
-								</div>
-								<!-- Citation -->
-								<div class="d-none">
-@article{2023cpupcgcn,
-	author = {Meseguer-Iborra, Nicolas and Abellán, José L. and Acacio, Manuel E.},
-	year = {2023},
-	month = {July},
-	title = {CPU-PCGCN: Efficient Processing of Convolutional Graph Networks on CPU Architectures},
-	journal = {Advanced Computer Architecture and Compilation for High-performance Embedded Systems},
-	volume = {19},
-	pages = {5--8},
-	isbn = {978-90-7842-704-9}
-}</div>
-							</div>
-						</div>
-
-						<div class="row mt-3">
-							<h2 class="pub-year-h2">2022</h2>
-
-							<div class="pub-block">
-								<div class="lucida-console h5">CPU-PCGCN: Procesamiento Eficiente de Redes Convolucionales de Grafos en Arquitecturas CPU</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Nicolás Meseguer-Iborra</span>, Francisco Muñoz-Martínez, José L. Abellán, Manuel E. Acacio</div>
-								<div class="pub-congress">XXXII Jornadas de Paralelismo, Alicante (Spain), September 2022.</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="/assets/documents/publications/2022CPU-PCGCN.pdf" target="_blank" class="link-dark ">PDF</a> </span>
-									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
-								</div>
-								<div class="d-none">
-@article{2022cpupcgcn,
-	author = {Meseguer-Iborra, Nicolas and Muñoz-Martínez, Francisco and Abellán, José L. and Acacio, Manuel E.},
-	year = {2022},
-	month = {June},
-	title = {CPU-PCGCN: Procesamiento Eficiente de Redes Convolucionales de Grafos en Arquitecturas CPU},
-	journal = {Avances en Arquitectura y Tecnología de Computadores},
-	volume = {32},
-	pages = {445--453},
-	isbn = {978-84-1302-185-0}
-}</div>
-							</div>
-						</div>
-
-						<div class="row mt-3">
-							<h2 class="pub-year-h2">2021</h2>
-
-							<div class="pub-block">
-								<div class="lucida-console h5">Evaluación de un Sistema de Recomendación en un Acelerador Híbrido</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Nicolás Meseguer-Iborra</span>, Francisco Muñoz-Martínez, Manuel E. Acacio, José L. Abellán</div>
-								<div class="pub-congress">XXXI Jornadas de Paralelismo, Málaga (Spain), September 2021.</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="/assets/documents/publications/2021DLRM.pdf" target="_blank" class="link-dark">PDF</a> </span>
-									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
-								</div>
-								<div class="d-none">
-@article{2021dlrm,
-	author = {Meseguer-Iborra, Nicolas and Muñoz-Martínez, Francisco and Acacio, Manuel E. and Abellán, José L.},
-	year = {2021},
-	month = {June},
-	title = {Evaluación de un Sistema de Recomendación en un Acelerador Híbrido},
-	journal = {Avances en Arquitectura y Tecnología de Computadores},
-	volume = {31},
-	pages = {107--115},
-	isbn = {978-84-09-32487-3}
-}</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Blog -->
-				<div class="col-md-8 offset-md-1 mb-5" id="blogContent">
-					<div class="container">
-
-						<div class="clickable mt-4 language">
-							<div class="d-none">https://nicolasmeseguer.notion.site/StreaMemory-Benchmark-35739f7f69404274a1d287f6827ef203</div>
-							<div class="h5">⛲ StreaMemory Benchmark</div>
-							<div class="blog-info mt-2">
-								<div class="d-inline">
-									<i class="fa-light fa-hourglass-clock" aria-hidden="true"></i> 25 min
-								</div>
-
-								<div class="float-end d-inline">
-									<i class="fa-light fa-calendar" aria-hidden="true"></i> 11 feb. 2022
-								</div>
-							</div>
-
-							<div class="blog-short mt-2" 
-								data-es="Explicación del Stream + Memory benchmark en MGPUSim y los archivos que he tenido que modificar para lograrlo."
-								data-en="Explanation of the Stream + Memory benchmark in MGPUSim and the files I had to modify to achieve it.">
-							</div>
-
-							<div class="blog-tags mt-1">
-								<span class="tag t-sky">#benchmark</span> <span class="tag t-lime">#mgpusim</span> <span class="tag t-purple">#akita</span>
-							</div>
-						</div>
-
-						<div class="clickable mt-4 language">
-							<div class="d-none">https://nicolasmeseguer.notion.site/Elementwise-2D-546f8fe9a8a24852a234bdc28b00cd15</div>
-							<div class="h5">🧊 Elementwise 2D Tensor</div>
-							<div class="blog-info mt-2">
-								<div class="d-inline">
-									<i class="fa-light fa-hourglass-clock" aria-hidden="true"></i> 10 min
-								</div>
-
-								<div class="float-end d-inline">
-									<i class="fa-light fa-calendar" aria-hidden="true"></i> 12 dec. 2022
-								</div>
-							</div>
-
-							<div class="blog-short mt-2" 
-								data-es="Explicación de element-wise para un tensor doble (2D) y un caso práctico de porqué no usar tamaños aleatorios para el tamaño de la matriz."
-								data-en="Explanation of element-wise for a double (2D) tensor and a case study of why not to use random sizes for matrix size.">
-							</div>
-
-							<div class="blog-tags mt-1">
-								<span class="tag t-sky">#mgpusim</span> <span class="tag t-sky">#akita</span>
-							</div>
-						</div>
-
-						<div class="clickable mt-4 language">
-							<div class="d-none">https://nicolasmeseguer.notion.site/Tracing-LDS-Unit-69210a9d8fe44b4a997f8391aa508621</div>
-							<div class="h5">🛤️ Tracing LDS Unit</div>
-							<div class="blog-info mt-2">
-								<div class="d-inline">
-									<i class="fa-light fa-hourglass-clock" aria-hidden="true"></i> 20 min
-								</div>
-
-								<div class="float-end d-inline">
-									<i class="fa-light fa-calendar" aria-hidden="true"></i> 30 nov. 2022
-								</div>
-							</div>
-
-							<div class="blog-short mt-2"
-								data-es="¿Alguna vez has querido adjuntar un tracer a un componente específico dentro de MGPUSim? Incluso si ese 'componente' no es un componente como tal, sino un subcomponente de un componente. Este tutorial te será útil."
-								data-en="Have you ever wanted to attach a tracer to a specific component inside MGPUSim? Even if that 'component' is not a component itself but a subcomponent of a component. This tutorial will be helpful.">
-							</div>
-
-							<div class="blog-tags mt-1">
-								<span class="tag t-sky">#mgpusim</span> <span class="tag t-sky">#akita</span> <span class="tag t-sky">#tracing</span>
-							</div>
-						</div>
-
-						<div class="clickable mt-4 language">
-							<div class="d-none">https://nicolasmeseguer.notion.site/DAISEN-Tutorial-9d041575a9b0489099086152fd9a927e</div>
-							<div class="h5">📊 DAISEN Tutorial</div>
-							<div class="blog-info mt-2">
-								<div class="d-inline">
-									<i class="fa-light fa-hourglass-clock" aria-hidden="true"></i> 15 min
-								</div>
-
-								<div class="float-end d-inline">
-									<i class="fa-light fa-calendar" aria-hidden="true"></i> 15 nov. 2022
-								</div>
-							</div>
-
-							<div class="blog-short mt-2" 
-								data-es="Breve tutorial sobre la herramienta de visualización DAISEN utilizada para MGPUSim. Este tutorial viene acompañado con un kernel de referencia."
-								data-en="Brief tutorial about the visualization tool DAISEN used for MGPUSim. This tutorial comes along with a kernel example.">
-							</div>
-
-							<div class="blog-tags mt-1">
-								<span class="tag t-sky">#mgpusim</span> <span class="tag t-sky">#akita</span> <span class="tag t-sky">#daisen</span>
-							</div>
-						</div>
-						
 					</div>
 				</div>
 
