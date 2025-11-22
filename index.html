@@ -105,7 +105,7 @@
 							<!-- <em>fibs = 0 : 1 : zipWith (+) fibs (tail fibs)</em> -->
 							<h3 id="honors-and-awards" class="mt-2" data-en="About me"></h3>
 							<p class="mt-2 justify">
-								Hey! I am Jam Khan. Currently, I am working as a Haskell Quantitative Developer in <a href="https://dl.acm.org/doi/10.1145/3674633">Core Strats</a> at Standard Chartered. 
+								Hey! I am Jam Khan. Currently, working as a Haskell Quantitative Developer in <a href="https://dl.acm.org/doi/10.1145/3674633">Core Strats</a> at Standard Chartered. 
 								<br>
 								<br>
 								Previously, I worked as a research intern at the Max Planck Institute for Security and Privacy, supervised by <a href="https://gbarthe.github.io/">Gilles Barthe</a>, and
@@ -185,7 +185,7 @@
 
 							<!-- <section class="experience-section"> -->
 							<h3 class="section-heading">Experience</h3>
-							
+
 							<ul class="experience-list no-bullets">
 								<li class="experience-item">
 								<div class="experience-header">
@@ -263,9 +263,72 @@
 								<li class="experience-item">
 									<div class="experience-header">
 										<h4 class="experience-title"><strong>IB & GCE A-level Tutor</strong> - CS & Math @ All Round Education Academy</h4>
-										<span class="experience-time">Jan - May 2023</span>
+										<span class="experience-time">March 2022 - June 2023</span>
 									</div>
 								</li>
+							</ul>
+
+							<h3 class="section-heading">Research Projects</h3>
+							<ul class="mt-1 no-bullets">
+								<li class="list-item project-block">
+									<h5>Traq: Quantum Cost Analysis of classical programs</h5>
+									<div class="project-subtitle">with Anurudh Peduri, Gilles Barthe, and Michael Walter</div> 
+									<p> A formal framework to estimate the quantum cost of classical programs. 
+										This includes designing a probabilistic source language with source-level cost analysis 
+										and formal guarantees provided via compilation to an actual quantum language. 
+										The implementation includes a Haskell Package with an EDSL and multiple typeclasses to extend the framework to more quantum algorithms. 
+									</p> 
+									<div class="project-materials">
+										<a href="#">[Under submission]</a> <a href="https://github.com/qi-rub/traq-v2">[To be public soon]</a> 
+									</div>
+								</li>
+								<br>
+								<li class="list-item project-block">
+									<h5>ENVCAP: Capabilities & Separate Compilation with <i>first-class</i> environments</h5>
+									<div class="project-subtitle">with Jinhao Tan, Bruno C. d. S. Oliveira</div> 
+									<p> A programming language with first-class environments, capabilities as sandboxed first-class modules and
+										separate compilation with dynamic linking using first-class environments. The language semantics are derived
+										via a type-directed elaboration to a core calculus, called λ<sub>E</sub>. The meta-theory for elaboration is
+										mechanized in Rocq theorem prover and it has an interpreter in Haskell with support for more features, including
+										recursion, algebraic data types, pattern matching, etc.
+									</p> 
+									<div class="project-materials">
+										<a href="https://pldi25.sigplan.org/details/pldi-2025-src/2/Capabilities-as-First-Class-Modules-with-Separate-Compilation">[PLDI'25 SRC]</a> <a href="https://github.com/jam-khan/EnvCap">[GitHub]</a> 
+									</div>
+								</li>
+								<br>
+								<li class="list-item project-block">
+									<h5>CQOTL Prover</h5>
+									<div class="project-subtitle">with Gilles Barthe, Minbo Gao, Matthijs Muis, Ivan Renison, Keiya Sakabe, Michael Walter, Yingte Xu, and Li Zhou
+									</div>
+									<p>
+										Complete sound logic to prove relational properties of hybrid quantum programs with a prover implementation in OCaml and
+										Lean4 formalization. The CQOTL prover has frontend with ambient logic that supports definitions, specification and proof tactics 
+										to prove relational properties for cqWhile programs. Then, it supports an extraction mechanism to Lean4 for complex mathematical proof
+										obligations along with a lean4 library with necessary lemmas and theorems to prove the obligations. The extraction mechanism works via
+										elaboration of the cqOTL source to well-typed lean4 terms. 
+									</p> 
+									<div class="project-materials">
+										<a href="https://arxiv.org/abs/2510.07051">[arXiv]</a> <a href="https://github.com/LucianoXu/cqotl">[To be made public]</a> 
+									</div>
+								</li>
+								<br>
+								<li class="list-item project-block">
+									<h5>Simplex Bell Inequality</h5>
+									<div class="project-subtitle">with Ravishankar Ramanathan
+									</div>
+									<p>
+										Designing DI-QKD protocol using same measurement settings for both parties, Alice and Bob, such that the
+										robustness of protocol against an eavesdroper is maximal and device-independent. This includes finding a 
+										bell inequality, getting a guessing probability curve against noise using semi-definite programming in MatLab and 
+										Julia. Then, protocol is proved self-testing by an existense of SOS (Sum-of-Squares) decomposition that satisfies
+										key properties.
+									</p> 
+									<div class="project-materials">
+										<a href="assets/documents/presentation/DI_QKD_Presentation.pdf">[Presentation Slides]</a> 
+									</div>
+								</li>
+							
 							</ul>
 
 							<h3 class="section-heading">Conferences</h3>
@@ -338,12 +401,6 @@
 								</li>
 								<li class="experience-item">
 									<div class="experience-header">
-										<h4 class="experience-title"> in Sindh & Balochistan for GCE A-level Computer Science & Physics</h4>
-										<span class="experience-time">2020</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
 										<h4 class="experience-title">Best across 3 GCE A-levels, 2nd place in Pakistan</h4>
 										<span class="experience-time">2020</span>
 									</div>
@@ -359,111 +416,8 @@
 					</div>
 					</div>
 				</div>
-
-				<!-- Academic / Teaching -->
-				<div class="col-md-8 offset-md-1 mb-5" id="academicContent">
-					<div class="container">
-
-						<!-- Each new year -->
-						<div class="row mt-2 language">
-							<!-- Year -->
-							<h2 class="academic-year-h2">2024</h2>
-
-							<!-- Each subject -->
-							<div class="academic-block mt-4">
-								<!-- Title -->
-								<div class="lucida-console h5 academic-name"> <span data-en="Multi-core and Purpose-built Architectures" data-es="Arquitecturas Multinúcleo y de Propósito Específico (AMPE)"></span></div>
-								<!-- Subtitle -->
-								<div class="academic-rol mt-1"><span data-en="Teaching Assistant" data-es="Profesor de Prácticas"></span></div>
-								<!-- Extra inf -->
-								<div class="academic-year">3.00 ECTS. <span data-en="February 2024 - June 2024" data-es="Febrero 2024 - Junio 2024"></span></div>
-								<!-- Links -->
-								<div class="mt-1"><a href="https://twitter.com/AMPE_UMU" target="_blank" class="link-dark"><i class="fa-brands fa-twitter"></i></a></div>
-							</div>
-						</div>
-
-						<div class="row mt-4 language">
-							<h2 class="academic-year-h2">2023</h2>
-
-							<div class="academic-block">
-								<div class="lucida-console h5 academic-name"> <span data-en="Introduction to Operating Systems" data-es="Introducción a Sistemas Operativos (ISO)"></span></div>
-								<div class="academic-rol mt-1"><span data-en="Teaching Assistant" data-es="Profesor de Prácticas"></span></div>
-								<div class="academic-year">3.00 ECTS. <span data-en="September 2023 - January 2024" data-es="Septiembre 2023 - Enero 2024"></span></div>
-							</div>
-
-							<div class="academic-block mt-4">
-								<div class="lucida-console h5 academic-name"> <span data-en="Multi-core and Purpose-built Architectures" data-es="Arquitecturas Multinúcleo y de Propósito Específico (AMPE)"></span></div>
-								<div class="academic-rol mt-1"><span data-en="Teaching Assistant" data-es="Profesor de Prácticas"></span></div>
-								<div class="academic-year">3.00 ECTS. <span data-en="February 2023 - June 2023" data-es="Febrero 2023 - Junio 2023"></span></div>
-								<div class="mt-1"><a href="https://twitter.com/AMPE_UMU" target="_blank" class="link-dark"><i class="fa-brands fa-twitter"></i></a></div>
-							</div>
-						</div>
-
-						<div class="row mt-4 language">
-							<h2 class="student-h2" data-es="Alumnos" data-en="Students"></h2>
-
-							<div class="student-block">
-								<div class="student-name"> José Ángel Nicolás Ortega </div>
-								<div class="mt-1 h5 lucida-console"><span data-en="Register Bank Modeling on GPUs with MGPUSim" data-es="Modelado del Banco de Registros en GPUs con MGPUSim"></span></div>
-								<div class="student-mark fireworks">9.9 <span data-es="Sobresaliente - M. Honor" data-en="Outstanding - H.M."></span> </div>
-								<div class="mt-2 student-period"> <span data-en="September 2022 - June 2023" data-es="Septiembre 2022 - Junio 2023"></span> </div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Conferences -->
-				<div class="col-md-8 offset-md-1 mb-5" id="conferencesContent">
-					<div class="container language">
-						🌲 
-						<span 
-							data-es="Tienes todo el tiempo en el mundo para diseñar esta página"
-							data-en="You have all the time in the world to design this page.">
-						</span>
-						🌍
-						</div>
-				</div>
-
-				<!-- Experience -->
-				<div class="col-md-8 offset-md-1" id="experienceContent">
-					<div class="container language">
-						🌲 
-						<span 
-							data-es="Tienes todo el tiempo en el mundo para diseñar esta página"
-							data-en="You have all the time in the world to design this page.">
-						</span>
-						🌍
-						</div>
-				</div>
-
-				<!-- Projects -->
-				<div class="col-md-8 offset-md-1" id="projectsContent">
-					<div class="container language">
-						🌲 
-						<span 
-							data-es="Tienes todo el tiempo en el mundo para diseñar esta página"
-							data-en="You have all the time in the world to design this page.">
-						</span>
-						🌍
-						</div>
-				</div>
-
-				<!-- Photos -->
-				<!-- <div class="col-md-8 offset-md-1 mb-5" id="photosContent">
-					<h2 class="section-title language" 
-						data-en="Photos" 
-						data-es="Fotos">
-					</h2>
-					<p class="language" 
-						data-en="Here you can find some of my photos." 
-						data-es="Aquí puedes encontrar algunas de mis fotos.">
-					</p>
-				</div> -->
-
-
 			</div>
 		</div>
-
 
 		<!-- Scripts -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
