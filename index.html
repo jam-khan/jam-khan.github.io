@@ -1,433 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jam Kabeer Ali Khan — programming languages researcher interested in type systems, formal methods, and functional programming."/>
+    <meta name="author" content="Jam Kabeer Ali Khan"/>
+    <title>Jam Kabeer Ali Khan</title>
+    <meta name="robots" content="index,follow"/>
 
-		<meta name="description" content="Jam Kabeer Ali Khan's academic portfolio."/>
-		<meta name="keywords" content="jamkhan, JamKhan, jam-khan, Jam Khan, Jam Kabeer Ali Khan, Kabeer Khan, Jam Kabeer, Jam Khan github, Jam Kabeer Ali Khan github, jam khan, Jam Kabeer Ali Khan portfolio, Jam Khan portfolio"/>
-		
-		<meta name="author" content="Jam Kabeer Ali Khan" />
-		<meta name="copyright" content="Work protected by copyright; no distribution without permission." />
-		
-		<title>Jam K. A. Khan</title>
-		<meta name="robots" content="index,follow" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
+<script>
+    fetch('./assets/js/config.json')
+        .then(response => response.json())
+        .then(config => {
+            const scriptTag = document.createElement('script');
+            scriptTag.async = true;
+            scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsMeasurementId}`;
+            document.head.appendChild(scriptTag);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', config.googleAnalyticsMeasurementId);
+        })
+        .catch(error => console.error('Error loading config:', error));
+</script>
 
-	<script>
-        fetch('./assets/js/config.json')
-            .then(response => response.json())
-            .then(config => {
-                const scriptTag = document.createElement('script');
-                scriptTag.async = true;
-                scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsMeasurementId}`;
-                document.head.appendChild(scriptTag);
+<body>
+<div class="container" id="main-content">
 
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+    <!-- ==============================
+         HEADER  (photo left, contact + about right)
+         ============================== -->
+    <div class="row" id="header">
+        <div class="col-md-3 col-12 header-photo">
+            <img src="assets/documents/imgs/JamKhan.jpg"
+                 alt="Jam Kabeer Ali Khan"
+                 style="width:180px; border-radius:3px;">
+        </div>
+        <div class="col-md-9 col-12" id="contact">
+            <span class="my-name">Jam Khan</span>
+            <p>Functional Programmer at <a href="https://dl.acm.org/doi/10.1145/3674633">Standard Chartered</a></p>
+            <p>Email: jamkhan <b>at</b> connect.hku.hk</p>
+            <p class="header-links">
+                <a href="assets/documents/AcademicCV200126.pdf" target="_blank">[CV]</a>
+                &nbsp;
+                <a href="https://scholar.google.com/scholar?q=Jam+Kabeer+Ali+Khan" target="_blank">[Scholar]</a>
+                &nbsp;
+                <!-- TODO: replace with your DBLP author page URL -->
+                <!-- <a href="https://dblp.org/pid/XXX/XXXX.html" target="_blank">[DBLP]</a> -->
+                <!-- TODO: replace with your ORCID -->
+                <!-- <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX" target="_blank">[ORCID]</a> -->
+                <a href="https://arxiv.org/a/khan_j_1.html" target="_blank">[arXiv]</a>
+                &nbsp;
+                <a href="https://github.com/jam-khan/" target="_blank">[GitHub]</a>
+                &nbsp;
+                <a href="https://www.linkedin.com/in/jamkabeer" target="_blank">[LinkedIn]</a>
+            </p>
 
-                gtag('config', config.googleAnalyticsMeasurementId);
-            })
-            .catch(error => console.error('Error loading the configuration:', error));
-    </script>
+            <div id="about">
+                <p>
+                    At Standard Chartered, I work on the Cortex financial library, built on
+                    <a href="https://dl.acm.org/doi/10.1145/3674633">Mu</a> (a strict variant of Haskell).
+                    I collaborate part-time with <a href="https://ranjitjhala.github.io/">Ranjit Jhala</a>
+                    on verified constraint solving for refinement types. Previously, I was a Research Intern at
+                    <a href="https://www.mpi-sp.org/">MPI-SP</a> with
+                    <a href="https://gbarthe.github.io/">Gilles Barthe</a>, and an undergraduate researcher with
+                    <a href="https://www.cs.hku.hk/people/academic-staff/bruno">Bruno C. d. S. Oliveira</a> at the
+                    <a href="https://hkuplg.github.io/">HKU Programming Languages Group</a>, working on first-class
+                    environments, capabilities, and separate compilation.
+                </p>
+                <p class="research-interests">
+                    <b>Research Interests:</b> Type Theory, Functional Programming, Formal Verification,
+                    Theorem Provers, and Quantum Computing.
+                </p>
+            </div>
+        </div>
+    </div>
 
-	<body>
-		<div class="container" id="main-content">
-			<div class="row content" id="section-content">
-				
-				<div id="leftPanel" class="col-md-3 language">
-					<div class="row mb-3">
-						<div class="col">
-							<img 
-								src="assets/documents/imgs/JamKhan.jpg"
-								class="rounded me-auto d-block img-fluid profilepicture"
-								style="max-width: 450px; max-height: 330px"
-								alt="Jam Kabeer Ali Khan's profile picture">
-						</div>
-					</div>
+    <!-- ==============================
+         PUBLICATIONS
+         ============================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Publications</h2>
+            <ul class="pub-list">
 
-					<h5 class="mb-1">Jam Kabeer Ali Khan</h5>
-					
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="ai ai-cv" aria-hidden="true"></i>
-						</div>
+                <li>
+                    <div class="pub-venue-col">
+                        Preprint
+                    </div>
+                    <div class="pub-body">
+                        <span class="paper"><a href="https://arxiv.org/abs/2509.01508" target="_blank">Traq: Estimating the Quantum Cost of Classical Programs</a></span>
+                        <br>
+                        <span class="pub-authors">Anurudh Pedhuri, <span class="pub-self">Jam Kabeer Ali Khan</span>, Gilles Barthe, Michael Walter</span>
+                        <br>
+                        <a href="https://arxiv.org/abs/2509.01508" target="_blank">[arXiv]</a>
+                    </div>
+                </li>
 
-						<div class="col-10">
-							<a href="assets/documents/AcademicCV200126.pdf" class="link-dark" target="_blank" data-en="CV [Updated 01/2026]"></a>
-						</div>
-					</div>
+                <li>
+                    <div class="pub-venue-col">
+                        <a href="https://lics.siglog.org/lics26/" target="_blank">LICS 2026</a>
+                    </div>
+                    <div class="pub-body">
+                        <span class="paper"><a href="https://arxiv.org/pdf/2510.07051" target="_blank">Complete Relational Logic for Infinite-Dimensional Quantum Programs with Unbounded Assertions</a></span>
+                        <br>
+                        <span class="pub-authors">Gilles Barthe, Minbo Gao, <span class="pub-self">Jam Kabeer Ali Khan</span>,
+                        Matthijs Muis, Ivan Renison, Keiya Sakabe, Michael Walter, Yingte Xu, Tianshi Yu, Li Zhou</span>
+                        <br>
+                        <a href="https://arxiv.org/abs/2510.07051" target="_blank">[arXiv]</a>
+                        &nbsp;<span class="pub-note">(authors listed alphabetically)</span>
+                    </div>
+                </li>
 
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-regular fa-envelope" aria-hidden="true"></i>
-						</div>
+                <li>
+                    <div class="pub-venue-col">
+                        <a href="https://pldi25.sigplan.org/" target="_blank">SRC@PLDI'25</a>
+                    </div>
+                    <div class="pub-body">
+                        <span class="paper"><a href="https://pldi25.sigplan.org/details/pldi-2025-src/2/Capabilities-as-First-Class-Modules-with-Separate-Compilation" target="_blank">Capabilities as First-Class Modules with Separate Compilation</a></span>
+                        <br>
+                        <span class="pub-authors"><span class="pub-self">Jam Kabeer Ali Khan</span></span>
+                        <br>
+                        <a href="assets/documents/publications/pldi25src_khan.pdf" target="_blank">[paper]</a>
+                        <a href="https://www.youtube.com/live/BRhBv_aYNks?t=5125s" target="_blank">[talk]</a>
+                        <a href="assets/documents/PLDI_SRC_Poster.pdf" target="_blank">[poster]</a>
+                        <br>
+                        <span class="award">&#127941; Gold Award &mdash; Undergraduate Category</span>
+                    </div>
+                </li>
 
-						<div class="col-10">
-							<a href="mailto:jamkhan@connect.hku.hk" class="link-dark">jamkhan@connect.hku.hk</a>
-						</div>
-					</div>
+            </ul>
+        </div>
+    </div>
 
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-						</div>
+    <!-- ==============================
+         POSITIONS
+         ============================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Positions</h2>
+            <ul class="exp-list">
 
-						<div class="col-10">
-							<a href="https://www.linkedin.com/in/jamkabeer" class="link-dark" target="_blank">LinkedIn</a>
-						</div>
-					</div>
+                <li>
+                    <div class="exp-header">
+                        <span><b>Standard Chartered</b> &mdash; Quantitative Developer</span>
+                        <span class="exp-date">Oct 2025 &ndash; Present</span>
+                    </div>
+                </li>
 
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fab fa-github" aria-hidden="true"></i>
-						</div>
+                <li>
+                    <div class="exp-header">
+                        <span><b>Independent Research</b></span>
+                        <span class="exp-date">Jan 2026 &ndash; Present</span>
+                    </div>
+                    <div class="exp-desc">
+                        Supervised by <a href="https://ranjitjhala.github.io/">Ranjit Jhala</a>.
+                        <br>
+                        Topic: Refinement Types, Verified Constraint Solving, Meta-Programming.
+                    </div>
+                </li>
 
-						<div class="col-10">
-							<a href="https://github.com/jam-khan/" class="link-dark" target="_blank">GitHub</a>
-						</div>
-					</div>
-				</div>
+                <li>
+                    <div class="exp-header">
+                        <span><b>Max Planck Institute for Security &amp; Privacy</b> &mdash; Research Intern</span>
+                        <span class="exp-date">Apr &ndash; Sept 2025</span>
+                    </div>
+                    <div class="exp-desc">
+                        Supervised by <a href="https://gbarthe.github.io/">Gilles Barthe</a>.
+                        <br>
+                        Topic: Formal Verification of Quantum Programs, Relational Logics, Probabilistic Compilation &amp; Quantum Cost Analysis.
+                    </div>
+                </li>
 
-				<!-- About Me -->
-				<div class="col-md-8 offset-md-1 mb-5 active" id="mainPage">
-					<div class="container">
-						<div class="row language">
-							<!-- <em>fibs = 0 : 1 : zipWith (+) fibs (tail fibs)</em> -->
-							<h3 id="honors-and-awards" class="mt-2" data-en="About me"></h3>
-							<p class="mt-2 justify">
-								Hey! I am Jam Khan. Currently, working as a Haskell Quantitative Developer in <a href="https://dl.acm.org/doi/10.1145/3674633">Core Strats</a> at Standard Chartered. 
-								<br>
-								<br>
-								Previously, I worked as a research intern at the Max Planck Institute for Security and Privacy, supervised by <a href="https://gbarthe.github.io/">Gilles Barthe</a>, and
-								collaborated with <a href="https://michaelwalter.info/">Michael Walter</a> and <a href="https://anurudhp.github.io/">Anurudh Peduri</a>;
-								did Bachelor's thesis supervised by <a href="https://www.cs.hku.hk/people/academic-staff/bruno">Bruno C. d. S. Oliveira</a> at the <a href="https://hkuplg.github.io/">HKU PL Group</a>;
-								a research intern at the Quantum Information and Computation Lab (<a href="https://qici.weebly.com/">QICI</a>), supervised by <a href="https://www.cs.hku.hk/index.php/people/academic-staff/ravi">Ravishankar Ramanathan</a>.
-								I'm broadly interested in functional programming, type systems, formal methods and quantum computing.
-							</p>
+                <li>
+                    <div class="exp-header">
+                        <span><b>HKU Programming Languages Group</b> &mdash; Undergraduate Researcher</span>
+                        <span class="exp-date">Aug 2024 &ndash; Apr 2025</span>
+                    </div>
+                    <div class="exp-desc">
+                        Supervised by <a href="https://www.cs.hku.hk/people/academic-staff/bruno">Bruno C. d. S. Oliveira</a>.
+                        <br>
+                        Topic: Type Systems, Semantics, Mechanization &amp; First-Class Environments.
+                    </div>
+                </li>
 
-							<!-- Education Section -->
-							<h3 class="section-heading">Education</h3>
-							<ul class="mt-1 no-bullets">
+                <li>
+                    <div class="exp-header">
+                        <span><b>HKU Quantum Information and Computation Lab</b> &mdash; Research Intern</span>
+                        <span class="exp-date">Jun &ndash; Aug 2024</span>
+                    </div>
+                    <div class="exp-desc">
+                        Supervised by <a href="https://www.cs.hku.hk/index.php/people/academic-staff/ravi">Ravishankar Ramanathan</a>.
+                        <br>
+                        Topic: Device-Independent Quantum Key Distribution, Semi-Definite Programming &amp; Bell Non-Locality.
+                    </div>
+                </li>
 
-								<li class="list-item">
-									<div class="item-header">
-										<div class="item-main">
-											<h4 class="item-title">Bachelors of Engineering</h4>
-											<div class="item-subtitle">Major in Computer Science with Minor in Mathematics</div>
-											<div class="item-subtitle"><strong>University of Hong Kong</strong></div>
-										</div>
-										<span class="item-time">2021 – 2025</span>
-									</div>
-								</li>
-							
-								<li class="list-item">
-									<div class="item-header">
-										<div class="item-main">
-											<h4 class="item-title">BSc (Semester Exchange)</h4>
-											<div class="item-subtitle">Computer Science and Math</div>
-											<div class="item-subtitle"><strong>Northeastern University, Boston</strong></div>
-										</div>
-										<span class="item-time">Spring@2024</span>
-									</div>
-								</li>
-							</ul>
-							
-							<h3 id="honors-and-awards" class="mt-2" data-en="Research Papers"></h3>
-							<ul class="mt-1 no-bullets">
-								<li class="publication">
-									<p class="publication-title">Traq: Estimating the Quantum Cost of Classical Programs</p>
-									<p class="publication-authors">
-									Anurudh Peduri, <strong>Jam Kabeer Ali Khan</strong>, Gilles Barthe, and Michael Walter
-									</p>
-									<p class="publication-link">
-									<a href="#" target="_blank">[Under submission]</a>
-									</p>
-								</li>
-								
-								<li class="publication">
-									<p class="publication-title">A Duality Theorem for Classical-Quantum States with Applications to Complete Relational Program Logics</p>
-									<p class="publication-authors">
-									Gilles Barthe, Minbo Gao, <strong>Jam Kabeer Ali Khan</strong>, Matthijs Muis, Ivan Renison, Keiya Sakabe, Michael Walter, Yingte Xu, and Li Zhou
-									</p>
-									<p class="publication-link">
-									<a href="https://arxiv.org/abs/2510.07051" target="_blank">[arXiv:2510.07051]</a>
-									</p>
-								</li>
-								
-								<li class="publication">
-									<p class="publication-title">Capabilities as First-Class Modules with Separate Compilation</p>
-									<p class="publication-authors">
-									<strong>Jam Kabeer Ali Khan</strong>
-									</p>
-									<p class="publication-link">
-									<a href="https://pldi25.sigplan.org/details/pldi-2025-src/2/Capabilities-as-First-Class-Modules-with-Separate-Compilation" target="_blank">PLDI'25 Student Research Competition</a>
-									</p>
-									<p class="publication-award">
-										🥇 Gold Medal, Undergraduate Category
-									</p>								  
-									<div class="publication-materials">
-									<a href="assets/documents/publications/pldi25src_khan.pdf" target="_blank">Paper</a>
-									<a href="https://www.youtube.com/live/BRhBv_aYNks?t=5125s" target="_blank">Talk</a>
-									<a href="assets/documents/PLDI_SRC_Poster.pdf" target="_blank">Poster</a>
-									</div>
-								</li>
-							</ul>
+                <li class="exp-minor">
+                    <div class="exp-header">
+                        <span>ActusRayPartners (Hedge Fund) &mdash; Technology Intern</span>
+                        <span class="exp-date">Jun &ndash; Aug 2023</span>
+                    </div>
+                </li>
 
-							<!-- <section class="experience-section"> -->
-							<h3 class="section-heading">Experience</h3>
+                <li class="exp-minor">
+                    <div class="exp-header">
+                        <span>All Round Education Academy &mdash; Software Developer (Freelance)</span>
+                        <span class="exp-date">Mar &ndash; Nov 2023</span>
+                    </div>
+                </li>
 
-							<ul class="experience-list no-bullets">
-								<li class="experience-item">
-								<div class="experience-header">
-									<h4 class="experience-title"><strong>Haskell Quantitative Developer</strong> @ Standard Chartered</h4>
-									<span class="experience-time">Oct 2025 - present</span>
-								</div>
-								</li>
-								
-								<li class="experience-item">
-								<div class="experience-header">
-									<h4 class="experience-title"><strong>Research Intern</strong> @ Max Planck Institute for Security and Privacy</h4>
-									<span class="experience-time">April – Sept 2025</span>
-								</div>
-								</li>
-							
-								<li class="experience-item no-bullet">
-								<div class="experience-header">
-									<h3 class="experience-title"><strong>Undergrad Research</strong> @ Programming Languages Group, HKU</h3>
-									<span class="experience-time">Aug 2024 – April 2025</span>
-								</div>
-								</li>
-								<li class="experience-item no-bullet">
-								<div class="experience-header">
-									<h3 class="experience-title"><strong>Research Intern</strong> @ Quantum Information and Computation Lab, HKU</h3>
-									<span class="experience-time">June – Aug 2024</span>
-								</div>
-								</li>
+                <li class="exp-minor">
+                    <div class="exp-header">
+                        <span>HKU Sleep Lab &mdash; Student Research Assistant</span>
+                        <span class="exp-date">Apr &ndash; Oct 2022</span>
+                    </div>
+                </li>
 
-								<li class="experience-item no-bullet">
-									<div class="experience-header">
-										<h3 class="experience-title">Technology Intern @ ActusRayPartners Hedge Fund</h3>
-										<span class="experience-time">June – Aug 2023</span>
-									</div>
-								</li>
+            </ul>
+        </div>
+    </div>
 
-								<li class="experience-item no-bullet">
-									<div class="experience-header">
-										<h3 class="experience-title">Programmer (Freelance) @ All Round Education Academy</h3>
-										<span class="experience-time">March – Dec 2023</span>
-									</div>
-								</li>
-									
-								<li class="experience-item">
-								<div class="experience-header">
-									<h3 class="experience-title">Student Research Assistant (Programmer) @ Sleep Lab, HKU</h3>
-									<span class="experience-time">April 2022 – Oct 2022</span>
-								</div>
-								</li>
-							</ul>
+    <!-- ==============================
+         HONORS & AWARDS
+         ============================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Honors &amp; Awards</h2>
+            <ul class="act-list">
 
-							<h3 class="section-heading">Teaching Experience</h3>
-							
-							<ul class="experience-list no-bullets">
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title"><strong>Student TA</strong> - COMP236 Object-Oriented Programming in Java @ HKU</h4>
-										<span class="experience-time">Sept - Dec 2024</span>
-									</div>
-								</li>
+                <li>
+                    <span>
+                        <b>Gold Award</b>, ACM Student Research Competition (Undergraduate Category) at PLDI 2025
+                    </span>
+                    <span class="act-date">2025</span>
+                </li>
 
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title"><strong>Student TA</strong> - COMP236 Object-Oriented Programming in Java @ HKU</h4>
-										<span class="experience-time">Sept - Dec 2023</span>
-									</div>
-								</li>
+                <li>
+                    <span>
+                        Fully-Funded Tuition Scholarship, University of Hong Kong
+                    </span>
+                    <span class="act-date">2021 &ndash; 2025</span>
+                </li>
 
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title"><strong>Student TA</strong> - ENGG1340 Computer Programming II in C++ @ HKU</h4>
-										<span class="experience-time">Jan - May 2023</span>
-									</div>
-								</li>
+                <li>
+                    <span>
+                        Fully-Funded Scholarship, Nixor College
+                    </span>
+                    <span class="act-date">2018 &ndash; 2020</span>
+                </li>
 
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title"><strong>IB & GCE A-level Tutor</strong> - CS & Math @ All Round Education Academy</h4>
-										<span class="experience-time">March 2022 - June 2023</span>
-									</div>
-								</li>
-							</ul>
+                <li>
+                    <span>
+                        Regional Distinction in Computer Science &amp; Physics (GCE A-levels)
+                    </span>
+                    <span class="act-date">2020</span>
+                </li>
 
-							<!-- <h3 class="section-heading">Research Projects</h3>
-							<ul class="mt-1 no-bullets">
-								<li class="list-item project-block">
-									<h5>Traq: Quantum Cost Analysis of classical programs</h5>
-									<div class="project-subtitle">with Anurudh Peduri, Gilles Barthe, and Michael Walter</div> 
-									<p> A formal framework to estimate the quantum cost of classical programs. 
-										This includes designing a probabilistic source language with source-level cost analysis 
-										and formal guarantees provided via compilation to an actual quantum language. 
-										The implementation includes a Haskell Package with an EDSL and multiple typeclasses to extend the framework to more quantum algorithms. 
-									</p> 
-									<div class="project-materials">
-										<a href="#">[Under submission]</a> <a href="https://github.com/qi-rub/traq-v2">[To be public soon]</a> 
-									</div>
-								</li>
-								<br>
-								<li class="list-item project-block">
-									<h5>ENVCAP: Capabilities & Separate Compilation with <i>first-class</i> environments</h5>
-									<div class="project-subtitle">with Jinhao Tan, Bruno C. d. S. Oliveira</div> 
-									<p> A programming language with first-class environments, capabilities as sandboxed first-class modules and
-										separate compilation with dynamic linking using first-class environments. The language semantics are derived
-										via a type-directed elaboration to a core calculus, called λ<sub>E</sub>. The meta-theory for elaboration is
-										mechanized in Rocq theorem prover and it has an interpreter in Haskell with support for more features, including
-										recursion, algebraic data types, pattern matching, etc.
-									</p> 
-									<div class="project-materials">
-										<a href="https://pldi25.sigplan.org/details/pldi-2025-src/2/Capabilities-as-First-Class-Modules-with-Separate-Compilation">[PLDI'25 SRC]</a> <a href="https://github.com/jam-khan/EnvCap">[GitHub]</a> 
-									</div>
-								</li>
-								<br>
-								<li class="list-item project-block">
-									<h5>CQOTL Prover</h5>
-									<div class="project-subtitle">with Gilles Barthe, Minbo Gao, Matthijs Muis, Ivan Renison, Keiya Sakabe, Michael Walter, Yingte Xu, and Li Zhou
-									</div>
-									<p>
-										Complete sound logic to prove relational properties of hybrid quantum programs with a prover implementation in OCaml and
-										Lean4 formalization. The CQOTL prover has frontend with ambient logic that supports definitions, specification and proof tactics 
-										to prove relational properties for cqWhile programs. Then, it supports an extraction mechanism to Lean4 for complex mathematical proof
-										obligations along with a lean4 library with necessary lemmas and theorems to prove the obligations. The extraction mechanism works via
-										elaboration of the cqOTL source to well-typed lean4 terms. 
-									</p> 
-									<div class="project-materials">
-										<a href="https://arxiv.org/abs/2510.07051">[arXiv]</a> <a href="https://github.com/LucianoXu/cqotl">[To be made public]</a> 
-									</div>
-								</li>
-								<br>
-								<li class="list-item project-block">
-									<h5>Simplex Bell Inequality</h5>
-									<div class="project-subtitle">with Ravishankar Ramanathan
-									</div>
-									<p>
-										Designing DI-QKD protocol using same measurement settings for both parties, Alice and Bob, such that the
-										robustness of protocol against an eavesdroper is maximal and device-independent. This includes finding a 
-										bell inequality, getting a guessing probability curve against noise using semi-definite programming in MatLab and 
-										Julia. Then, protocol is proved self-testing by an existense of SOS (Sum-of-Squares) decomposition that satisfies
-										key properties.
-									</p> 
-									<div class="project-materials">
-										<a href="assets/documents/presentation/DI_QKD_Presentation.pdf">[Presentation Slides]</a> 
-									</div>
-								</li>
-							
-							</ul> -->
+            </ul>
+        </div>
+    </div>
 
-							<h3 class="section-heading">Conferences</h3>
-							
-							<ul class="experience-list no-bullets">
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title"><strong>Volunteer</strong> @ CAV'25</h4>
-										<span class="experience-time">July 2025</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title"><strong>Presenter & Attendee</strong> @ PLDI'25</h4>
-										<span class="experience-time">June 2025</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title"><strong>Virtual Attendee</strong> @ POPL'25</h4>
-										<span class="experience-time">Jan 2025</span>
-									</div>
-								</li>
-							</ul>
+    <!-- ==============================
+         SOFTWARE
+         ============================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Software</h2>
+            <ul class="proj-list">
 
-							<h3 class="section-heading">Honors and Awards</h3>
-							
-							<ul class="experience-list">
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">PLDI'25 SRC Gold Award (~500 USD)</h4>
-										<span class="experience-time">Jun 2025</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">HKSAR Goverment Scholarship (~44000 USD)</h4>
-										<span class="experience-time">2021, 22, 23, 24</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">HKU Undergraduate Entrance Scholarship for Outstanding Academic Talents (~33000 USD)</h4>
-										<span class="experience-time">2022, 23, 24</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">Rosita King Ho Scholarship (~1540 USD) -- Exchange to Boston</h4>
-										<span class="experience-time">2024</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">1st runner up @Cathay Hackathon'23 (~Free return ticket from HK to Boston)</h4>
-										<span class="experience-time">2023</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">HKU Foundation Entrance Scholarship (~11000 USD)</h4>
-										<span class="experience-time">2021</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">Top in Sindh & Balochistan for GCE A-level Computer Science & Physics</h4>
-										<span class="experience-time">2020</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">Best across 3 GCE A-levels, 2nd place in Pakistan</h4>
-										<span class="experience-time">2020</span>
-									</div>
-								</li>
-								<li class="experience-item">
-									<div class="experience-header">
-										<h4 class="experience-title">100% Merit Scholarship for GCE A-levels @Nixor College Karachi (~5000+ USD)</h4>
-										<span class="experience-time">2018-20</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                <li>
+                    <b>Ref-Lean</b><span class="proj-lang">Lean 4</span> &mdash;
+                    Refinement types via meta-programming with local refinement typing.
+                </li>
 
-		<!-- Scripts -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-		<script src="assets/js/languageManager.js"></script>
-		<script src="assets/js/main.js"></script>
-		<footer>
-			<p>Theme from <a href="https://nicolasmeseguer.github.io/">Nicolás Meseguer</a></p>
-		</footer>
-	</body>
+                <li>
+                    <b>EnvML</b><span class="proj-lang">Haskell</span> &mdash;
+                    Source language with elaboration to a core calculus &mdash; a variant of System F with first-class environments.
+                </li>
 
+                <li>
+                    <a href="https://github.com/jam-khan/EnvCap" target="_blank"><b>EnvCap</b></a><span class="proj-lang">OCaml</span> &mdash;
+                    Source language with separate compilation and capabilities elaborated into first-class environments.
+                </li>
+
+                <li>
+                    <b>&lambda;<sub>SCE</sub></b><span class="proj-lang">Rocq</span> &mdash;
+                    Mechanized proofs of type-soundness, semantics preservation, and separate compilation correctness.
+                </li>
+
+                <li>
+                    <a href="https://github.com/LucianoXu/cqotl" target="_blank"><b>CQOTL Prover</b></a><span class="proj-lang">OCaml, Lean 4</span> &mdash;
+                    Interactive prover for relational properties of classical-quantum programs with extraction to Lean 4.
+                </li>
+
+                <li>
+                    <a href="https://github.com/qi-rub/traq-v2" target="_blank"><b>Traq</b></a><span class="proj-lang">Haskell</span> &mdash;
+                    Haskell package for source-level quantum cost analysis of classical programs.
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==============================
+         TALKS
+         ============================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Talks</h2>
+            <ul class="act-list">
+
+                <li>
+                    <span>
+                        <a href="https://popl26.sigplan.org/home/planqc-2026" target="_blank">PLanQC 2026</a>
+                        &mdash; Contributed talk
+                    </span>
+                    <span class="act-date">Jan 2026</span>
+                </li>
+
+                <li>
+                    <span>
+                        <a href="https://www.youtube.com/live/BRhBv_aYNks?t=5125s" target="_blank">SRC@PLDI 2025</a>
+                        &mdash; <i>Capabilities as First-Class Modules with Separate Compilation</i>
+                    </span>
+                    <span class="act-date">Jun 2025</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==============================
+         TEACHING
+         ============================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Teaching</h2>
+            <ul class="edu-list">
+
+                <li>
+                    <div class="edu-header">
+                        <span><b>COMP2396</b> Object-Oriented Programming in Java &mdash; Teaching Assistant</span>
+                        <span class="edu-date">Fall 2023, Fall 2024</span>
+                    </div>
+                    <div class="edu-detail">University of Hong Kong</div>
+                </li>
+
+                <li>
+                    <div class="edu-header">
+                        <span><b>ENGG1340</b> Computer Programming in C++ &mdash; Teaching Assistant</span>
+                        <span class="edu-date">Spring 2023</span>
+                    </div>
+                    <div class="edu-detail">University of Hong Kong</div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==============================
+         SERVICE
+         ============================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Service</h2>
+            <ul class="act-list">
+
+                <li>
+                    <span>
+                        Student Volunteer, <a href="https://i-cav.org/2025/" target="_blank">CAV 2025</a>
+                    </span>
+                    <span class="act-date">Jul 2025</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</div><!-- /container -->
+
+<footer class="container">
+    <p>Jam Kabeer Ali Khan</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="assets/js/languageManager.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>

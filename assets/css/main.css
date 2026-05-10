@@ -1,466 +1,217 @@
-/* MOBILE's FIRST - Custom properties */
-/* This classes will be then modified for bigger screens */
-
-#mowatave {
-	color: #2bd284 !important;
-	text-decoration: underline;
+body {
+    font-family: charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #111;
+    text-rendering: optimizeLegibility;
 }
 
-.underline {
-	text-decoration: underline;
+a { color: #017785; text-decoration: none; }
+a:hover { color: #000; text-decoration: underline; }
+
+h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+    color: #111 !important;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
 }
 
-a {
-	text-decoration-thickness: 1px;
-}
-
-#hobbiesH4 {
-	text-align: center;
-}
-
-#hobbie1, #hobbie2, #hobbie3 {
-	text-align: center;
-	margin-top: 1em;
-}
-
-.abme-honors-bullet{
-	font-size: 16px;
-}
-
-/* GENERAL CSS */
 #main-content {
-	margin-top: 20px;
+    padding-top: 1.1rem;
+    padding-bottom: 1.5rem;
+    max-width: 880px;
 }
 
-li > .active {
-	font-weight: 500;
+/* ---- Header ---- */
+#header { margin-bottom: 0.6rem; }
+
+.my-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.2rem;
+    line-height: 1.15;
 }
 
-.trnsf-thin {
-	font-weight: 300;
+#contact p { margin-bottom: 0.15rem; font-size: 0.95em; }
+
+/* ---- About (nested in header right column) ---- */
+#about { margin-top: 0.6rem; }
+#about p { font-size: 0.92em; margin-bottom: 0.3rem; }
+.research-interests { font-size: 0.92em; }
+
+.header-links { margin-bottom: 0.4rem; }
+
+h3.subsection {
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #444;
+    margin-top: 0.7rem;
+    margin-bottom: 0.25rem;
 }
 
-.trnsf-italic {
-	font-style: italic;
+/* ---- Publications ---- */
+.pub-list { list-style: none; padding: 0; margin: 0; }
+.pub-list > li {
+    display: flex;
+    gap: 0.1rem;
+    margin-bottom: 0.4em;
+    align-items: flex-start;
+    font-size: 0.92em;
 }
 
-.justify {
-	text-align: justify;
-  	text-justify: inter-word;
+.pub-venue-col {
+    min-width: 90px;
+    width: 80px;
+    flex-shrink: 0;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #222;
+    padding-top: 0.05rem;
+    line-height: 1.3;
 }
 
-.lucida-console {
-	font-family: 'Lucida Console', monospace;
+.pub-venue-col a { color: #222; }
+
+.pub-venue-col .pub-note {
+    color: inherit;
+    font-style: normal;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
-.profilepicture {
-	max-height: 300px;
-	min-width: 150px;
-	min-height: 150px;
-	margin-left: auto;
-	margin-right: auto;
-}
+.pub-body { flex: 1; line-height: 1.3; }
 
-.fseneca {
-	max-width: 50%; 
-	height: auto;
+.paper {
+    font-weight: bold;
+    font-size: 0.97em;
+    color: #017785;
 }
-
-.fseneca:hover {
-	transform: scale(1.05,1.05);
-}
-
-/* PUBLICATIONS - Related */
-.pub-block {
-	border-left: 2px #D9DDDC solid;
-	padding-left: 15px;
-}
-
-.pub-year-h2 {
-	font-size: 3.2em;
-	font-weight: 100;
-}
+.paper a { color: #017785; }
+.paper a:hover { color: #000; }
+.pub-self { font-weight: bold; }
 
 .pub-authors {
-	font-weight: 400;
+    font-size: 0.85em;
+    color: #555;
 }
 
-.pub-authors .pub-author {
-	font-weight: 500;
+.pub-note {
+    font-size: 0.95em;
+    color: #888;
+    font-style: italic;
 }
 
-.pub-congress {
-	font-weight: 100;
+.award {
+    color: #2a7a2a;
+    font-style: italic;
+    font-size: 0.88em;
 }
 
-.pub-force-margin-left {
-	margin-left: 10px !important;
+/* ---- Experience ---- */
+.exp-list { list-style: none; padding: 0; margin: 0; }
+.exp-list > li { margin-bottom: 0.3em; }
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-/* ACADEMIC - Related */
-.academic-year-h2, .student-h2 {
-	font-size: 3.2em;
-	font-weight: 100;
+.exp-date {
+    font-size: 0.8em;
+    color: #555;
+    white-space: nowrap;
+    padding-left: 1em;
+    flex-shrink: 0;
 }
 
-.academic-block, .student-block {
-	padding-left: 15px;
-}
-
-.academic-rol {
-	font-weight: 400;
-}
-
-.academic-year {
-	font-weight: 100;
-}
-
-.student-mark {
-	font-weight: 400;
-	font-size: 1.1em;
-}
-
-.student-period {
-	font-weight: 100;
-}
-
-/* OPTION BUTTON */
-.options-button {
-    position: fixed;
-	
-    height: 50px;
-    width: 50px;
-	cursor: pointer;
-
-    border-radius: 100%;
-	
-	bottom: 25px;
-	right: 25px;
-
-	display: inline-block;
-
-	font-size: 1.2em;
-	vertical-align: middle;
-	text-align: center;
-
-	padding-top: .35em;
-}
-
-.options-button i, img {
-	margin: auto;
-	z-index: -999;
-}
-
-#options-toggler {
-	transition: .2s;
-}
-
-#options-toggler:hover {
-	transform: scale(1.09,1.09);
-}
-
-#theme {
-	height: 40px;
-    width: 40px;
-
-	bottom: 85px !important;
-	right: 30px !important;
-
-	font-size: 1em;
-
-	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
-    transition: background-color .5s; /* For modern browsers */
-}
-
-#lan {
-	height: 40px;
-    width: 40px;
-
-	bottom: 130px;
-	right: 30px;
-
-	font-size: 1em;
-
-	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
-    transition: background-color .5s; /* For modern browsers */
-}
-
-.lang-flag {
-	height: 15px;
-    width: 22.5px;
-	vertical-align:	0px;
-}
-
-/* BLOG - Related */
-.blog-info {
-	font-weight: 100;
-	width: 100%;
-	clear: both;
-	display: block;
-}
-
-.blog-short {
-	font-weight: 400;
-	font-size: 17px;
-}
-
-.blog-tags {
-	text-align: right;
-}
-
-.blog-tags > .tag {
-	border-radius: 100px;
-	padding: 4px;
-	font-size: 12px;
-	font-weight: 600;
-	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
-	color: white;
-}
-
-.blog-tags > .t-purple {
-	background-color: rgb(137, 70, 255, 0.8);
-}
-
-.blog-tags > .t-lime {
-	background-color: rgba(118, 185, 0, 0.8);
-}
-
-.blog-tags > .t-sky {
-	background-color: rgba(37, 197, 223, 0.8);
-}
-
-.clickable {
-	border-radius: 20px;
-	border: 2px #D9DDDC solid;
-	padding: 15px;
-	cursor: pointer;
-	transition: .3s;
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
-}
-
-.clickable:hover {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
-	transform: scale(1.03,1.03);
-}
-
-.list-item {
-	margin-bottom: 10px;
-}
-  
-.item-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-  
-  .item-main {
-	/* This is the container for the title and subtitle on the left */
-	padding-right: 2em; /* Ensures space between text and date */
-  }
-  
-  .item-title {
-	font-size: 1em; /* CORRECTED: Same size as body text for a cleaner look */
-	font-weight: bold; /* Bold is used for emphasis, not size */
-	color: #333;
-	margin: 0;
-  }
-  
-  .item-subtitle {
-	font-size: 1em;
-	font-style: italic;
-	color: #555;
-	margin-top: 0.25em; /* A clean, small gap */
-  }
-  
-  .item-time {
-	font-size: 0.9em;
-	color: #666;
-	white-space: nowrap;
-	flex-shrink: 0; /* Prevents the date from shrinking or wrapping */
-	margin-top: 2px; /* Fine-tunes vertical alignment with the title */
-  }
-  
-.item-details {
-	list-style-type: disc;
-	padding-left: 1.5em;
-	margin-top: 0.75em;
-	color: #444;
-	line-height: 1.6;
-  }
-
-.publication-venue {
-	font-family: 'Lato', Arial, sans-serif;
-	font-size: 1em;
-	color: #559;
-	margin-top: 0;
-	margin-bottom: 0px;
-}
-
-.publication-venue a {
-	color: #0016bb;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.publication-venue a:hover {
-	text-decoration: underline;
-}
-
-.publication-award {
-	font-family: 'Lato', Arial, sans-serif;
-	font-size: 0.80em;
-	font-weight: bold;
-	color: #a47d3a; /* A professional, muted gold color */
-	margin-top: 0px; /* Give it a little space from the line above */
-	margin-bottom: 1px;
-}
-  
-.publication-materials {
-	margin-top: 15px; /* Adds space above this row of links */
-	padding-left: 2px; /* A tiny bit of padding for alignment */
-}
-
-.publication-materials a {
-	font-family: 'Lato', Arial, sans-serif;
-	font-weight: bold;
-	font-size: 0.9em;
-	color: #0056b3; /* Professional blue from before */
-	text-decoration: none;
-}
-
-.publication-materials a:hover {
-	text-decoration: underline;
-}
-
-.publication-materials a:not(:first-child)::before {
-	content: '|'; /* The vertical bar character */
-	color: #ccc;  /* A light grey separator that doesn't distract */
-	margin: 0 12px; /* Even spacing on either side of the bar */
-}
-
-body {
-    font-family: 'Lora', Georgia, serif;
+.exp-desc {
+    font-size: 0.83em;
+    color: #444;
+    margin: 0.02rem 0 0;
     line-height: 1.3;
-    color: #333;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
 }
 
-.publication {
-	border-bottom: 1px solid #eee;
+.exp-list > li b { font-weight: 600; }
+.exp-list > li.exp-minor { color: #666; }
+.exp-list > li.exp-minor .exp-date { color: #777; }
+
+/* ---- Software / Projects ---- */
+.proj-list { list-style: none; padding: 0; margin: 0; }
+.proj-list > li {
+    margin-bottom: 0.45em;
+    font-size: 0.88em;
+    line-height: 1.3;
 }
 
-.publication-title {
-	font-size: 1.1em;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.5em;
+.proj-lang {
+    font-size: 0.8em;
+    color: #777;
+    font-style: italic;
+    margin-left: 0.3em;
 }
 
-.publication-authors {
+/* ---- Education / Teaching ---- */
+.edu-list { list-style: none; padding: 0; margin: 0; }
+.edu-list > li { margin-bottom: 0.35em; }
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.edu-date {
+    font-size: 0.82em;
+    color: #555;
+    white-space: nowrap;
+    padding-left: 0.8em;
+    flex-shrink: 0;
+}
+
+.edu-detail {
+    font-size: 0.85em;
+    color: #444;
+    margin: 0.02rem 0 0;
+    line-height: 1.3;
+}
+
+/* ---- Activities / Talks / Service / Honors ---- */
+.act-list { list-style: none; padding: 0; margin: 0; }
+.act-list > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25em;
     font-size: 0.9em;
-    margin-bottom: 2px;
-}
-.publication-link a {
-    color: #003366;
-    text-decoration: none;
-}
-.publication-link a:hover {
-    text-decoration: underline;
+    line-height: 1.3;
 }
 
-.no-bullets {
-	list-style-type: none;
+.act-date {
+    font-size: 0.85em;
+    color: #555;
+    white-space: nowrap;
+    padding-left: 0.8em;
+    flex-shrink: 0;
 }
 
-.experience-item {
-	margin-bottom: 2px;
+/* ---- Footer ---- */
+footer {
+    margin-top: 1.2rem;
+    font-size: 0.78em;
+    color: #999;
 }
-  
-.experience-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-	margin-bottom: 0.5em;
+footer a { color: #999; }
+
+/* ---- Responsive ---- */
+@media (max-width: 767px) {
+    #main-content { padding: 1rem 1rem 2rem; }
+    .exp-header, .edu-header, .act-list > li { flex-direction: column; }
+    .exp-date, .edu-date, .act-date { padding-left: 0; margin-top: 0.05rem; }
+    .header-photo { text-align: center; margin-bottom: 0.8rem; }
+    #about { margin-top: 0.4rem; }
 }
-
-.experience-title {
-	font-size: 0.9em;
-	font-weight: 400;
-	margin: 0;
-	padding-right: 1em;
-}
-
-.experience-time {
-	font-size: 0.9em;
-	color: #666;
-	white-space: nowrap; /* Prevents the date from breaking into two lines */
-	text-align: right;
-}
-
-/* Styling for the description bullet points */
-.experience-description {
-	margin-left: 0; /* Resets any default margin */
-	padding-left: 2em; /* Standard indentation for bullet points */
-	color: #444;
-	line-height: 1.6; /* A clean line height */
-}
-
-#mainPage .list-item p {
-	font-size: 0.92em;        /* Slightly smaller than normal body text */
-	line-height: 1.5;         /* Better readability */
-	color: #333;              /* Consistent academic tone */
-	margin-bottom: 0.8em;     /* Space between paragraphs */
-	}
-	
-	#mainPage .list-item p a {
-	color: #1a3e7c;           /* Darker, professional blue */
-	font-weight: 500;          /* Slightly stronger for emphasis */
-	text-decoration: underline;
-	}
-	
-	#mainPage .list-item .publication-materials a {
-	font-size: 0.85em;         /* Slightly smaller links */
-	color: #003366;
-	}
-	
-	#mainPage .list-item .publication-materials a:hover {
-	text-decoration: underline;
-	}
-	
-	#mainPage .list-item .item-subtitle {
-	font-size: 0.88em;
-	color: #555;
-	font-style: italic;        /* Subtle academic emphasis */
-	}
-	
-	#mainPage .list-item {
-	padding-left: 10px;       /* Slight indentation for elegance */
-	border-left: 2px solid #ddd;  /* Subtle visual cue */
-	margin-bottom: 15px;      /* Space between project items */
-	}
-	
-/* MEDIA QUERIES */
-/* BIGGER SCREENS */
-@media (min-width: 768px) {
-
-	#hobbiesH4 {
-		text-align: left;
-	}
-
-	#hobbie1, #hobbie2, #hobbie3 {
-		text-align: left;
-		margin-top: 0;
-	}
-
-	.profilepicture {
-		margin-left: 0%;
-		margin-right: 0%;
-	}
-	
-	.abme-honors-bullet{
-		margin-left: 40px;
-	}
-}
-
